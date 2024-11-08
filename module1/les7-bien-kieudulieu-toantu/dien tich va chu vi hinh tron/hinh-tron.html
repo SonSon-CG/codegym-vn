@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hinh-tron</title>
+</head>
+<body>
+Chu vi va Dien tich hinh tron
+<br>
+
+<input type="number" id="radius" placeholder="nhap ban kinh">
+<button type="button" onclick="tinh()" >Tinh Chu vi va Dien tich</button>
+
+<p id="chuvi"></p>
+<p id="dientich"></p>
+
+
+<script>
+function tinh() {
+    a = Number(document.getElementById("radius").value);
+    b = a*2*Math.PI;
+    c = a*a*Math.PI;
+
+    document.getElementById("chuvi").innerText= "Chu vi " +b;
+    document.getElementById("dientich").innerText= "Dien tich " + c;
+
+}
+</script>
+</body>
+</html>
