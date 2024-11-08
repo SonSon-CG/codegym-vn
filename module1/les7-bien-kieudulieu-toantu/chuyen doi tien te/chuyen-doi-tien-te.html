@@ -7,7 +7,7 @@
 <body>
 <form>
 Amount <br>
-    <input type="number" placeholder="nhap so tien" id="a"> <br>
+    <input type="number" placeholder="nhap so tien" id="sotien"> <br>
 From
     <select id="from">
         <option value="VND">VND</option>
@@ -19,14 +19,14 @@ To
         <option value="USD">USD</option>
     </select>
 
-    <button type="button" onclick="convert()"></button>
-
-
-
+    <button type="button" onclick="convert()">Convert </button>
 
 
 </form>
 <script>
+    function convert(){
+        a = +document.getElementById("sotien").value
+    }
 
 
 
