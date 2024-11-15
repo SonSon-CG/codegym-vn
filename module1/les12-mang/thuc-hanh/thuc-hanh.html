@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc-hanh</title>
+</head>
+<body>
+<input type="text" id="txtValue">
+<input type="button" id="btnAdd" value="Add" onclick="add_element_to_array();">
+<!--<input type="button" id="btnDisplay" value ="Display" onclick="display_array();">-->
+<div id="result"></div>
+<script>
+
+let array = []
+function add_element_to_array() {
+   a = document.getElementById("txtValue").value;
+   array.push(a)
+}
+
+
+
+a = document.getElementById("txtValue").value;
+for (i=0; i<array.length; i++){
+    if(array[i]===a){
+    document.write("a co trong mang");
+    break;
+    }
+}
+
+// function display_array() {
+//     let e = ""
+//     for (let i = 0; i < array.length; i++) {
+//         e += array[i];
+//         document.getElementById("result").innerHTML = e + "<br>"
+//     }
+// }
+
+
+
+</script>
+
+</body>
+</html>
