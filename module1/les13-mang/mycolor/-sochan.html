@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+  <script>
+    let numbers = prompt("nhap so")
+    console.log(numbers)
+    let array = []
+
+    for (i=0;i<numbers.length;i++){
+      if (numbers[i]%2 == 0){
+        array.push("-" + numbers[i])
+      } else
+        array.push(numbers[i])
+    }
+    console.log(array.join(''));
+
+
+
+
+
+
+  </script>
+</body>
+</html>

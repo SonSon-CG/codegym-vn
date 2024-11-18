@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id ="word">
+<button onclick="Translate()">Translate</button>
+<br>
+<div id = result></div>
+<script>
+    function Translate(){
+
+    let engArray = ["Apple", "Banana", "Cook"]
+    let vieArray = ["Tao", "Chuoi", "Nau"]
+
+    let a = document.getElementById("word").value;
+    let i = engArray.indexOf(a)
+        if (i !== -1){
+            document.getElementById("result").innerHTML= vieArray[i]
+            } else{
+        alert("nhot")}
+    }
+
+
+
+
+</script>
+
+    </body>
+    </html>
