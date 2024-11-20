@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>square</title>
+
+
+</head>
+<body>
+binh phuong cua <input type="text" id="inputnumber" oninput="tinh()"> la
+<div id="result"></div>
+<script>
+    function square(number){
+        let result = number*number;
+        return result;
+
+
+    function tinh(){
+        let a = +document.getElementById("inputnumber").value;
+        var result = square(a)
+        document.getElementById("result").innerText = result;
+    }}
+
+
+</script>
+
+</body>
+</html>

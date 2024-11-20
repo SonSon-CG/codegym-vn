@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function processConfirm(cautraloi){
+    let result = ""
+    if (cautraloi){
+        result = "ok choi thi choi"
+    }else{
+        result = "khong choi thi thoi"
+    }
+    return result
+}
+let confirmCautraloi = confirm("co choi khong");
+let a = processConfirm(confirmCautraloi);
+alert(a);
+
+
+
+</script>
+</body>
+</html>

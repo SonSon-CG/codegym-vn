@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //                         Truyền Tham Trị (Pass by Value)
+    // 1. Khi truyền một giá trị nguyên thủy vào một hàm,
+    //     một bản sao của giá trị đó được tạo ra và truyền vào hàm.
+    //    2.  Các kiểu dữ liệu nguyên thủy bao gồm:
+    //     number, string, boolean, null, undefined, và symbol.
+    //          3.Thay đổi giá trị của biến gốc bên trong hàm không ảnh hưởng đến giá trị ban đầu bên ngoài hàm.
+
+    function changeValue(x) {
+        x = 10;
+        console.log("Trong hàm, x =", x); // x = 10
+    }
+
+    let a = 5;
+    changeValue(a);
+    console.log("Ngoài hàm, a =", a); // a = 5
+
+
+
+
+    //                         Khi a được truyền vào hàm changeValue, một bản sao của giá trị 5 được tạo ra và gán cho x.
+    //     Bất kỳ thay đổi nào đối với x trong hàm không ảnh hưởng đến giá trị của a bên ngoài hàm.
+    //
+    //
+    //
+    //                             Truyền Tham Chiếu (Pass by Reference)
+    //
+    // 4. Khi truyền tham chiếu, thay vì truyền giá trị của đối tượng, JavaScript truyền một tham chiếu (một "địa chỉ" hoặc "liên kết") đến đối tượng.
+    //     Do đó, nếu bạn thay đổi giá trị của đối tượng trong hàm, thay đổi này sẽ ảnh hưởng đến đối tượng gốc bên ngoài hàm.
+    //
+    //     Các kiểu dữ liệu không phải nguyên thủy (non-primitive types), như:
+    //
+    //     Object
+    //     Array
+    //     Function
+
+
+
+</script>
+</body>
+</html>
