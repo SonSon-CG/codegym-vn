@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="inputnumber">
+<button type="button" onclick="call()">+1</button>
+<script>
+    function add(number) {
+        return (number + 1)
+    }
+
+    function call() {
+        a = +document.getElementById("inputnumber").value
+        document.write(add(a))
+    }
+
+    function calll() {
+        a = +document.getElementById("inputnumber").value
+        document.write(add(`hirn   ${a}   thi`))
+    }
+
+
+</script>
+</body>
+</html>

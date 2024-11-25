@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>Product name</td>
+        <td> </td>
+        <td> </td>
+    </tr>
+    <tbody id="content"></tbody>
+</table>
+<script>
+    let products = ["Nokia","Sony","Samsung"];
+    let content = document.getElementById("content");
+    let tbody = "";
+    for (let i = 0; i < products.length; i++) {
+        tbody += "<tr><td>" + products[i] + "</td>" +
+            "<td><button>Edit</button></td>" +
+            "<td><button on>Delete</button></td>" +
+            "</tr>"
+    }
+    content.innerHTML = tbody;
+</script>
+</body>
+</html>

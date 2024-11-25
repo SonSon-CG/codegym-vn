@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra so hoan hao</title>
+</head>
+<body>
+<script>
+    function inputNum() {
+        let num = parseInt( prompt('Nhap so nguyen duong') );
+        while ( num <= 0 ) {
+            num = +prompt('So nguyen duong phai > 0, nhap lai!');
+        }
+        return num;
+    }
+
+    function checkPerfectNum(num) {
+        if (num <= 1) {
+            return false;
+        }
+
+        let sum = 0;
+
+        for (let i = 1; i <= num / 2; i++) {
+            if (num % i === 0) {
+                sum += i;
+            }
+        }
+
+        if (sum === num) {
+            return true;
+        }else {
+            return false;
+        }
+    }
+    let soDuong = inputNum();
+    let result = checkPerfectNum(soDuong);
+    alert(result);
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="inputFoot" > foot  =<div id="resultMeter"> meter</div>
+<input type="text" id="inputMeter"> meter =<div id ="resultFoot"> foot</div>
+<button type="button" onclick="convert()">Convert</button>
+<script>
+    function footToMeter(foot) {
+        return foot * 0.305;
+    }
+    function meterToFoot(meter){
+        return meter * 3.279;
+    }
+
+    function convert(){
+        let a = +document.getElementById("inputFoot").value
+        document.getElementById("resultMeter").innerText = footToMeter(a);
+
+        let b = +document.getElementById("inputMeter").value
+        document.getElementById("resultFoot").innerText = meterToFoot(b);
+
+    }
+
+</script>
+</body>
+</html>
