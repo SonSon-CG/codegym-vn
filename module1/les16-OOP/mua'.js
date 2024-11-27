@@ -19,6 +19,7 @@ class Animal {
     getName() {
         return this.name;
     }
+
     setName(name) {
         this.name = name;
     }
@@ -29,6 +30,7 @@ class Animal {
 
 
 }
+
 // ham khoi tao khong tham so
 let dog = new Animal();
 // doi tuong dung ham khoi tao full tham so
